@@ -1,0 +1,57 @@
+.cadastroGroup{
+    height: 93vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #19274e;
+    color: #eee9e5;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #536d88;
+    width: 350px;
+    height: 500px;
+    border-radius: 10px;
+}
+.inputGroup{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputGroup label{
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.inputGroup input{
+    width: 150px;
+    border: 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid #ccc;
+    color: #FFF;
+    background-color: transparent;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+.inputGroup input::placeholder{
+   color: #CCC;
+}
+
+.btnCadastrar, .btnLogar{
+    border: 0;
+    padding: 5px;
+    outline: none;
+    border-radius: 2px;
+    color: #FFF;
+    background-color: #429867;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

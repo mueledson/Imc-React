@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.Navbar{
+    width: 100vw;
+    background-color: #4e4d4a;
+}
+.Icon{
+    margin-left: 10000px;
+    display: none;
+}
+.Navigation{
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    padding: 25px;
+}
+.Navigation a{
+    color: #eee9e5;
+    list-style: none;
+    text-decoration: none;
+}
+.Navigation li{
+    display: inline;
+    padding-left: 25px;
+}
