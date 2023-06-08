@@ -4,20 +4,33 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #19274e;
+    background-color: #231b42;
     color: #eee9e5;
 }
 
-form{
+.Cadastroform{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #536d88;
-    width: 350px;
+    background-color: #4c5e91;
+    width: 550px;
     height: 500px;
     border-radius: 10px;
+    font-size: 15px;
 }
+
+h1{
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.names, .pass{
+    display: flex;
+    gap: 50px; 
+}
+
 .inputGroup{
     display: flex;
     flex-direction: column;
@@ -25,33 +38,58 @@ form{
 
 .inputGroup label{
     margin-top: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
+.names input, .pass input{ width: 150px; }
+
+.email .inputGroup input{ width: 250px; }
+
 .inputGroup input{
-    width: 150px;
+    padding: 15px;
+    width: 170px;
     border: 0;
     border-left: 0;
     border-right: 0;
     border-top: 0;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 3px solid white;
     color: #FFF;
     background-color: transparent;
     outline: none;
     margin-bottom: 15px;
+    background-color: #001848;
+    border-radius: 2px;
+    transition: 1s;
 }
 
-.inputGroup input::placeholder{
-   color: #CCC;
+.inputGroup input:focus{
+    width: 250px;
+    border-bottom: 6px solid #C1C1C1;
 }
+
+.email input:focus{
+    width: 420px;
+    border-bottom: 6px solid #C1C1C1;
+}
+
+.inputGroup input::placeholder{ color: #FFF; }
 
 .btnCadastrar, .btnLogar{
+    width: 150px;
     border: 0;
-    padding: 5px;
+    padding: 15px;
     outline: none;
-    border-radius: 2px;
+    border-radius: 5px;
     color: #FFF;
     background-color: #429867;
     margin-top: 5px;
     margin-bottom: 5px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.btnLogar:hover, .btnCadastrar:hover{
+    width: 480px;
+    transition: 0.9s;
+    cursor: pointer;
 }
